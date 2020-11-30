@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IoT_chain Platform</title>
+</head>
+<body>
+    <h3>IoT_chain Platform</h3>
+    Node address : <input type"text" id="node_address">
+    <br><br>
+    led color: <select id="color">
+        <option value="0">off</option>
+        <option value="1">blue</option>
+        <option value="2">red</option>
+        <option value="3">cyan</option>
+        <option value="4">green</option>
+        <option value="5">magenta</option>
+        <option value="6">yellow</option>
+        <option value="7">white</option>
+    </select>
+    <button onclick="sendTx()">send</button>
+    <br><br>
+    <table style="width:60%" id="data">
+    </table>
+    <button onclick="getData()">data</button>
+    <script src="script.js"></script>
+</body>
+</html>
