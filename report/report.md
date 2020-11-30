@@ -296,7 +296,7 @@ window.ethereum.enable()
 
 When open the web page, you should connect your Ethereum account with MetaMask.
 
-<img src="../report/MetaMask Login.png" width=25%/>
+<img src="../report/MetaMask login.png" width=25%/>
 
 ### 4.2. Web3.js
 
@@ -344,7 +344,7 @@ sendTx = function() {
 
 When sending a transaction, you can set the gas price and gas limit to make the transaction mined in a proper time range.
 
-<img src="../report/MetaMask Transaction.png" width=25%/>
+<img src="../report/MetaMask transaction.png" width=25%/>
 
 #### 4.2.3. Getting Past Events
 
