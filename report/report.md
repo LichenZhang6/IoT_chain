@@ -29,7 +29,7 @@ A Raspberry Pi 3 Model B+ is a credit card-sized computer with a 1.4 GHz process
 
 In this section, we will introduce the sensors including DHT22, button, RGBLED, and corresponding wire connection and python library.
 
-####2.1.1. Temperature Humidity Sensor DHT22
+#### 2.1.1. Temperature Humidity Sensor DHT22
 
 The DHT-22 is a digital-output relative humidity and temperature sensor. It uses a capacitive humidity sensor and a thermistor to measure the surrounding air, and spits out a digital signal on the data pin.
 
@@ -74,7 +74,7 @@ import adafruit_dht
 sensor = adafruit_dht.DHT22(board.D14)
 ```
 
-####2.1.4. Installing GPIO Zero
+#### 2.1.4. Installing GPIO Zero
 
 GPIO Zero is installed by default in the Raspberry Pi OS image. Follow this guide to installing on Raspberry Pi OS Lite or other operating systems. In Python, libraries and functions used in a script must be imported by name at the top of the file. This library uses Broadcom (BCM) pin numbering for the GPIO pins, as opposed to physical (BOARD) numbering. Unlike in the RPi.GPIO library, this is not configurable. Any pin marked GPIO in the diagram below can be used as a pin number. For example, if an DHT22 was attached to GPIO14 you would specify the pin number as 14 rather than 8.
 
@@ -195,7 +195,7 @@ function = contract.functions.add_records(timestamp_encode,
                                           temperature_encode, humidity_encode)
 ```
 
-####2.3.4. Signing and Send Transaction
+#### 2.3.4. Signing and Send Transaction
 
 Signing transactions is the only way for you to prove to the Blockchain you are who you claimed to be. It is a fundamental concept when working with the Ethereum Web3.py library. You can sign transactions using a private key for the address that is initiating the transaction. For security reasons, take extra care when handling private keys.
 
@@ -284,7 +284,7 @@ MetaMask is a browser plugin, available as the MetaMask Chrome extension or Fire
 
 But MetaMask does something more than an Ethereum wallet. As a browser extension, it can interact with the current webpage you’re browsing. It does so by injecting a JavaScript library called web3.js in every webpage you visit. Once injected, a `web3` object will be available via `window.web3` in the JavaScript code of this website. To have a look at what this object looks like, just type `window.web3` in the Chrome or Firefox DevTools console, if you have MetaMask installed.
 
-####4.1.1. Connecting Web3.js to MetaMask
+#### 4.1.1. Connecting Web3.js to MetaMask
 
 To develop for MetaMask, install MetaMask on your development machine. Once MetaMask is installed and running, you should find that new browser tabs have a `window.ethereum` object available in the developer console. This is how your website will interact with MetaMask.
 
@@ -323,7 +323,7 @@ const nodeAddress = document.getElementById("node_address")
 const color = document.getElementById("color")
 ```
 
-####4.2.2. Sending Transaction
+#### 4.2.2. Sending Transaction
 
 This fucntion allows us to send color code to smart contracts . It will send a transaction to the smart contract and execute its method. This can alter the smart contract state.
 
@@ -346,7 +346,7 @@ When sending a transaction, you can set the gas price and gas limit to make the 
 
 <img src="../report/MetaMask Transaction.png" width=25%/>
 
-####4.2.3. Getting Past Events
+#### 4.2.3. Getting Past Events
 
 We can use web3.js to query all past events that a contract has ever emitted. The `getPastEvents()` will return an array of event objects. However it is currently limited to one thousand results at a time, it will return an error if more results would be returned. The first argument allows you to specify the event type to query, or `allEvents()` to return all event types. The second argument is a filter object that allows you to filter by start and end block. You can also specify the type of event your want to query. We query all "records" events and present on the web page.
 
@@ -398,7 +398,7 @@ getData = function() {
 }
 ```
 
-####4.2.4 Decode the Data from Contract
+#### 4.2.4 Decode the Data from Contract
 
 The data stored on the Ethereum is in hexadecimal, we need to convert it to readable characters.
 
