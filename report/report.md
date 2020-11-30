@@ -1,7 +1,5 @@
 # IoT chain: A Blockchain-enabled Decentralized Data Collection and Storage Platform for IoT
 
-<center>Lichen Zhang(lxz489)</center>
-
 Since Bitcoin's emergence in 2008, blockchain has been the next revolutionary technology. A blockchain is a decentralized and distributed ledger that consists of connected blocks of transactions. Ethereum is a Blockchain 2.0 platform that allows developers to build a Decentralized Application(DApp) without building a new blockchain from the scratch. IoT is the technology to embed all the physical devices with sensors and chips to provide automation process via machine-to-machine communication. However some serious challenges remain impossible to address due to the finite resources of IoT devices and the centralized system architecture, such as: central server congestion, single point of failure, and the risk of malicious use of personal information. Our project is aiming to build a system with Ethereum Blockchain, Raspberry Pi, Web pages, DHT22 temperature and humidity sensors. The system is a proof-of-concept prototype to simulate smart home applications. It collects the real-time temperature and humidity by DHT22 via Raspberry Pi. The sensor data will be updated to the Blockchain and stored on the smart contract deployed on the Ethereum. We can also control the LED via sending transactions to smart contract and all transactions are recorded and unmodifiable.
 
 ## 1. System Architecture
